@@ -1,0 +1,28 @@
+.menu {
+    background-color:  #282832;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #130716;
+    width: 70vw;
+    height: 70vh;
+}
+
+.name {
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.projetos {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px
+}

@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #130716;
+    width: 100%;
+    height: 80px;
+    padding-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    margin-right: 40px;
+}
+
+.home, .sobremim, .qualificacoes {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
