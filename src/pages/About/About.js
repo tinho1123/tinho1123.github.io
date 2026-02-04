@@ -1,7 +1,7 @@
 import React from 'react'
-import './SobreMim.css'
+import './About.css'
 
-export default function SobreMim() {
+export default function About() {
   const skills = [
     { category: 'Frontend', items: ['React', 'TypeScript', 'CSS3', 'HTML5', 'JavaScript'] },
     { category: 'Backend', items: ['Node.js', 'Express', 'Banco de Dados', 'APIs REST', 'PostgreSQL'] },
@@ -22,24 +22,22 @@ export default function SobreMim() {
   ];
 
   return (
-    <div className='sobre-mim'>
+    <section id='sobre' className='about'>
       <div className='container'>
-        <section className='intro-section'>
-          <h1>Sobre Mim</h1>
-          <div className='intro-content'>
-            <div className='intro-text'>
-              <p>
-                Olá! 👋 Sou Wellington Carvalho, desenvolvedor Full Stack Pleno apaixonado por tecnologia e soluções inovadoras. 
-              </p>
-              <p>
-                Com experiência sólida em desenvolvimento web, trabalho com tecnologias modernas como <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong> e diversos bancos de dados.
-              </p>
-              <p>
-                Meu foco é criar soluções de qualidade, mantendo boas práticas de código limpo, escalabilidade e performance. Sou líder técnico na CDC Bank e sempre busco novos desafios que me façam evoluir como profissional.
-              </p>
-            </div>
+        <h1>Sobre Mim</h1>
+        <div className='intro-content'>
+          <div className='intro-text'>
+            <p>
+              Olá! 👋 Sou Wellington Carvalho, desenvolvedor Full Stack Pleno apaixonado por tecnologia e soluções inovadoras. 
+            </p>
+            <p>
+              Com experiência sólida em desenvolvimento web, trabalho com tecnologias modernas como <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong> e diversos bancos de dados.
+            </p>
+            <p>
+              Meu foco é criar soluções de qualidade, mantendo boas práticas de código limpo, escalabilidade e performance. Sou líder técnico na CDC Bank e sempre busco novos desafios que me façam evoluir como profissional.
+            </p>
           </div>
-        </section>
+        </div>
 
         <section className='experience-section'>
           <h2>Experiência Profissional</h2>
@@ -54,8 +52,8 @@ export default function SobreMim() {
           </div>
         </section>
 
-        <section className='skills-section'>
-          <h2>Habilidades & Tecnologias</h2>
+        <section className='quick-skills'>
+          <h2>Principais Habilidades</h2>
           <div className='skills-grid'>
             {skills.map((skillGroup, idx) => (
               <div key={idx} className='skill-category'>
@@ -69,20 +67,7 @@ export default function SobreMim() {
             ))}
           </div>
         </section>
-
-        <section className='cta-section'>
-          <h2>Vamos trabalhar juntos?</h2>
-          <p>Estou sempre aberto a novas oportunidades e colaborações. Entre em contato!</p>
-          <div className='contact-buttons'>
-            <a href='https://www.linkedin.com/in/wellingtoncarvalhodacunhafilho/' target='_blank' rel='noopener noreferrer' className='contact-btn'>
-              Conectar no LinkedIn
-            </a>
-            <a href='https://github.com/tinho1123' target='_blank' rel='noopener noreferrer' className='contact-btn secondary'>
-              Ver Projetos no GitHub
-            </a>
-          </div>
-        </section>
       </div>
-    </div>
+    </section>
   )
 }

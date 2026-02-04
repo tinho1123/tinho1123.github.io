@@ -1,18 +1,18 @@
-import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import Menu from './pages/Menu/Menu';
-import Qualificacoes from './pages/Qualificações/Qualificacoes';
-import SobreMim from './pages/SobreMim/SobreMim';
+import Hero from './pages/Hero/Hero';
+import About from './pages/About/About';
+import Skills from './pages/Skills/Skills';
+import Footer from './components/Footer/Footer';
+import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <Navbar />
-      <Routes>
-        <Route path='/' element= {<Menu />} exact />
-        <Route path='/sobremim' element={ <SobreMim /> } />  
-        <Route path='/qualificacoes' element={ <Qualificacoes />} />
-      </Routes>
+      <Hero />
+      <About />
+      <Skills />
+      <Footer />
     </div>
   );
 }

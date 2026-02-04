@@ -1,23 +1,37 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import './Menu.css';
+import './Hero.css';
 
-export default function Menu() {
+export default function Hero() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className='menu'>
+    <section id='home' className='hero'>
       <div className='hero-content'>
         <div className='hero-text'>
-          <h1 className='greeting'>Olá! 👋</h1>
+          <h1 className='greeting'>Olá!</h1>
           <h2 className='title'>Sou Wellington Carvalho</h2>
           <p className='subtitle'>
             Desenvolvedor Full Stack Pleno | Soluções Web Modernas | React • Node.js • TypeScript
           </p>
           
           <div className='cta-buttons'>
-            <Link to='/sobremim' className='btn btn-primary'>
+            <button 
+              onClick={() => scrollToSection('sobre')}
+              className='btn btn-primary'
+            >
               Conhecer Meu Trabalho
-            </Link>
-            <a href='https://github.com/tinho1123' target='_blank' rel='noopener noreferrer' className='btn btn-secondary'>
+            </button>
+            <a 
+              href='https://github.com/tinho1123' 
+              target='_blank' 
+              rel='noopener noreferrer' 
+              className='btn btn-secondary'
+            >
               Ver Repositórios
             </a>
           </div>
@@ -48,6 +62,6 @@ export default function Menu() {
       <div className='scroll-indicator'>
         <span>Explore ↓</span>
       </div>
-    </div>
+    </section>
   )
 }

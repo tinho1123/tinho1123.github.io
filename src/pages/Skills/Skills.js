@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './Qualificacoes.css'
+import './Skills.css'
 
-export default function Qualificacoes() {
+export default function Skills() {
   const [activeTab, setActiveTab] = useState('frontend');
 
   const skillsData = {
@@ -51,9 +51,9 @@ export default function Qualificacoes() {
   ];
 
   return (
-    <div className='qualificacoes'>
+    <section id='habilidades' className='skills'>
       <div className='container'>
-        <h1>Qualificações & Habilidades</h1>
+        <h1>Habilidades & Qualificações</h1>
 
         {/* Stats Section */}
         <section className='stats-section'>
@@ -126,6 +126,6 @@ export default function Qualificacoes() {
           </div>
         </section>
       </div>
-    </div>
+    </section>
   )
 }
